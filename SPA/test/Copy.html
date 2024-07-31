@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Food Donation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container {
+    flex: 1 1 60%;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea,
+  .form-group select {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #555;
+    padding-left: 40px;
+  }
+
+  .form-group input[type="text"]::placeholder,
+  .form-group input[type="email"]::placeholder,
+  .form-group textarea::placeholder,
+  .form-group select::placeholder {
+    color: #999;
+  }
+
+  .form-group .fa {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .form-group textarea {
+    height: 150px;
+  }
+
+  .form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .side-content {
+    flex: 1 1 40%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+
+  .side-content h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .side-content p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .form-container,
+    .side-content {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1><i class="fas fa-hands-helping"></i> Contact Us</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <i class="fas fa-user"></i>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <i class="fas fa-comment"></i>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    <div class="side-content">
+      <h2><i class="fas fa-info-circle"></i> About Our Organization</h2>
+      <p>We are a non-profit organization dedicated to fighting hunger in our community. Through food donations from generous individuals like you, we are able to provide meals to those in need. Your contribution makes a real difference in the lives of families facing food insecurity.</p>
+      <h2><i class="fas fa-hands"></i> How to Donate</h2>
+      <p>To donate food items, simply fill out the form on the left with your contact information and details about the items you would like to donate. We will get in touch with you to coordinate the donation process. Thank you for your support!</p>
+    </div>
+  </div>
+</body>
+</html>
